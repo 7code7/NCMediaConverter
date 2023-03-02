@@ -1,11 +1,11 @@
 {
-    "name": "extract",
-    "description": "Allows to extract archive from the web interface",
+    "name": "media_converter",
+    "description": "Allows to convert Audio and Video",
     "type": "project",
     "license": "AGPL",
     "authors": [
         {
-            "name": "Paul Lereverend"
+            "name": "Andreas Butz"
         }
     ],
     "require": {

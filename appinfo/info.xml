@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
-    <id>video_converter</id>
-    <name>Video converter</name>
-    <summary>Convert videos within the web interface</summary>
+    <id>media_converter</id>
+    <name>Media converter</name>
+    <summary>Convert video and audio within the web interface</summary>
     <screenshot>https://raw.githubusercontent.com/PaulLereverend/NextcloudVideo_Converter/master/img/appstore.gif</screenshot>
     <description><![CDATA[Convert videos within the web interface
 
@@ -21,16 +21,17 @@
     * More formats will be added soon
 
 ]]></description>
-    <version>1.0.5</version>
+    <version>0.0.1</version>
     <licence>agpl</licence>
-    <author mail="paulereverend@gmail.com">Paul Lereverend</author>
-    <namespace>Video_converter</namespace>
+    <!--<author mail="paulereverend@gmail.com">Paul Lereverend</author>-->
+    <author>Andreas Butz</author>
+    <namespace>Media_converter</namespace>
     <category>multimedia</category>
     <category>tools</category>
-    <website>https://github.com/PaulLereverend/NextcloudVideo_Converter</website>
-    <bugs>https://github.com/PaulLereverend/NextcloudVideo_Converter</bugs>
+    <website>https://github.com/7code7/NCMediaConverter</website>
+    <bugs>https://github.com/7code7/NCMediaConverter</bugs>
     <dependencies>
-        <nextcloud min-version="13" max-version="24"/>
+        <nextcloud min-version="13" max-version="25"/>
     </dependencies>
 </info>
 
