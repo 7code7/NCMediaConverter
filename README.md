@@ -1,4 +1,4 @@
-# Video_Converter
+# Media_Converter
 Place this app in **nextcloud/apps/**
 
 ## Features
