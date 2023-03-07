@@ -1,5 +1,5 @@
 OC.L10N.register(
-    "video_converter",
+    "media_converter",
     {
         "Convert into" : "Конвертировать в",
         "Note: This could take a considerable amount of time depending on your hardware and the preset you chose. You can safely close this window." : "Примечание: Эта операция может занять значительное количество времени в зависимости от ваших аппаратных средств и выбранного профиля.",

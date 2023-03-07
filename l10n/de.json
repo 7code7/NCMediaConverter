@@ -1,0 +1,32 @@
+{
+  "translations": {
+    "Convert into": "Konvertieren",
+    "Note: This could take a considerable amount of time depending on your hardware and the preset you chose. You can safely close this window.": "Hinweis: Dies kann abhängig von Hardware und Voreinstellung einige Zeit in Anspruch nehmen",
+    "Preset": "Voreinstellung",
+    "UltraFast": "extrem schnell",
+    "SuperFast": "super schnell",
+    "VeryFast": "sehr schnell",
+    "Faster": "schneller",
+    "Fast": "schnell",
+    "default": "Standard",
+    "Slow": "langsam",
+    "Slower": "langsamer",
+    "VerySlow": "sehr langsam",
+    "Note: faster means worse quality or bigger size.": "Hinweis: schneller heißt schlechtere Qualität oder größere Ausgabedatei",
+    "Priority": "Priorität",
+    "High": "Hoch",
+    "Normal": "Normal",
+    "Low": "Niedrig",
+    "Codec": "Codierung",
+    "Auto": "Auto",
+    "Target bitrate": "Ausgabebitrate",
+    "Mbit": "MBit",
+    "Mbit/s": "MBit/s",
+    "Scale to": "Skaliere zu",
+    "Keep": "Behalten",
+    "Keep aspect": "Behalte Faktor",
+    "Use faststart (for MP4)": "Benutze faststart (für MP4)",
+    "Choose the output format": "Wähle Ausgabeformat"
+  },
+  "pluralForm": "nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);"
+}
