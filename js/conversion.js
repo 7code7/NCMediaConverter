@@ -3,7 +3,7 @@ $(document).ready(function () {
         init: function () {
             OCA.Files.fileActions.registerAction({
                 name: 'convert',
-                displayName: 'Convert into',
+                displayName: t('media_converter', 'Convert into'),
                 mime: 'video',
                 permissions: OC.PERMISSION_UPDATE,
                 type: OCA.Files.FileActions.TYPE_DROPDOWN,
@@ -37,11 +37,11 @@ $(document).ready(function () {
                         + '</h2>'
                         + '<div class="sk-circle" style="display:none" id="loading"><div class="sk-circle1 sk-child"></div><div class="sk-circle2 sk-child"></div><div class="sk-circle3 sk-child"></div><div class="sk-circle4 sk-child"></div><div class="sk-circle5 sk-child"></div><div class="sk-circle6 sk-child"></div><div class="sk-circle7 sk-child"></div><div class="sk-circle8 sk-child"></div><div class="sk-circle9 sk-child"></div><div class="sk-circle10 sk-child"></div><div class="sk-circle11 sk-child"></div><div class="sk-circle12 sk-child"></div></div>'
                         + '<div style="text-align:center; display:none; margin-top: 10px;" id="noteLoading">'
-                        + '<p>Note: This could take a considerable amount of time depending on your hardware and the preset you chose. You can safely close this window.</p>'
+                        + '<p>' + t('media_converter', 'Note: This could take a considerable amount of time depending on your hardware and the preset you chose. You can safely close this window.') + '</p>'
                         + '</div>'
                         + '<div id="params">'
                         + '<p class="vc-label urldisplay" id="labelPreset" style="display:inline-block; margin-right:5px;">'
-                        + 'Preset'
+                        + t('media_converter', 'Preset')
                         + '</p>'
                         + '<select id="preset">'
                         + '<option value="ultrafast">UltraFast</option>'
@@ -49,81 +49,81 @@ $(document).ready(function () {
                         + '<option value="veryfast">VeryFast</option>'
                         + '<option value="faster">Faster</option>'
                         + '<option value="fast">Fast</option>'
-                        + '<option value="medium" selected>Medium (default)</option>'
+                        + '<option value="medium" selected>Medium (' + t('media_converter', 'default') + ')</option>'
                         + '<option value="slow">Slow</option>'
                         + '<option value="slower">Slower</option>'
                         + '<option value="veryslow">VerySlow</option>'
                         + '</select>'
                         + '<br>'
-                        + '<p id="note">Note: faster means worse quality or bigger size</p>'
+                        + '<p id="note">' + t('media_converter', 'Note: faster means worse quality or bigger size.') + '</p>'
                         + '<br>'
                         + '<p class="vc-label urldisplay" id="labelPriority" style="display:inline-block; margin-right:5px;">'
-                        + 'Priority'
+                        + t('media_converter', 'Priority')
                         + '</p>'
                         + '<select id="priority" style="margin-bottom: 10px;">'
-                        + '<option value="-10">High</option>'
-                        + '<option value="0">Normal (default)</option>'
-                        + '<option value="10" selected>Low</option>'
+                        + '<option value="-10">' + t('media_converter', 'High') + '</option>'
+                        + '<option value="0">' + t('media_converter', 'Normal') + ' (' + t('media_converter', 'default') + ')</option>'
+                        + '<option value="10" selected>' + t('media_converter', 'Low') +'</option>'
                         + '</select>'
                         + '<br>'
                         + '<p class="vc-label urldisplay" id="labelCodec" style="display:inline-block; margin-right:5px;">'
-                        + 'Codec'
+                        + t('media_converter', 'Codec')
                         + '</p>'
                         + '<select id="vcodec" style="margin-bottom: 10px;">'
-                        + '<option value="none">Auto</option>'
+                        + '<option value="none">' + t('media_converter', 'Auto') + '</option>'
                         + '<option value="x264">H264</option>'
                         + '<option value="x265">HEVC</option>'
                         + '<option value="copy">Copy</option>'
                         + '</select>'
+                        + '<br>'
                         + '<p class="vc-label urldisplay" id="labelBitrate" style="display:inline-block; margin-right:5px;">'
-                        + 'Target bitrate'
+                        + t('media_converter', 'Target bitrate')
                         + '</p>'
                         + '<select id="vbitrate" style="margin-bottom: 10px;">'
-                        + '<option value="none">Auto</option>'
-                        + '<option value="1">1k</option>'
-                        + '<option value="2">2k</option>'
-                        + '<option value="3">3k</option>'
-                        + '<option value="4">4k</option>'
-                        + '<option value="5">5k</option>'
-                        + '<option value="6">6k</option>'
-                        + '<option value="7">7k</option>'
+                        + '<option value="none">' + t('media_converter', 'Auto') + '</option>'
+                        + '<option value="1">1 ' + t('media_converter', 'Mbit') + '</option>'
+                        + '<option value="2">2 ' + t('media_converter', 'Mbit') + '</option>'
+                        + '<option value="3">3 ' + t('media_converter', 'Mbit') + '</option>'
+                        + '<option value="4">4 ' + t('media_converter', 'Mbit') + '</option>'
+                        + '<option value="5">5 ' + t('media_converter', 'Mbit') + '</option>'
+                        + '<option value="6">6 ' + t('media_converter', 'Mbit') + '</option>'
+                        + '<option value="7">7 ' + t('media_converter', 'Mbit') + '</option>'
                         + '</select>'
                         + '<p class="vc-label urldisplay" id="labelBitrateUnit" style="display:inline-block; margin-right:5px;">'
-                        + 'kbit/s'
+                        + t('media_converter', 'Mbit/s')
                         + '</p>'
                         + '<br>'
                         + '<p class="vc-label urldisplay" id="labelScale" style="display:inline-block; margin-right:5px;">'
-                        + 'Scale to'
+                        + t('media_converter', 'Scale to')
                         + '</p>'
                         + '<select id="scale" style="margin-bottom: 10px;">'
-                        + '<option value="none">Keep</option>'
+                        + '<option value="none">' + t('media_converter', 'Keep') + '</option>'
                         + '<option value="vga">VGA (640x480)</option>'
                         + '<option value="wxga">WXGA (1280x720)</option>'
                         + '<option value="hd">HD (1368x768)</option>'
                         + '<option value="fhd">FHD (1920x1080)</option>'
                         + '<option value="uhd">4K (3840x2160)</option>'
-                        + '<option value="320">Keep aspect 320 (Wx320)</option>'
-                        + '<option value="480">Keep aspect 480 (Wx480)</option>'
-                        + '<option value="600">Keep aspect 600 (Wx600)</option>'
-                        + '<option value="720">Keep aspect 720 (Wx720)</option>'
-                        + '<option value="1080">Keep aspect 1080 (Wx1080)</option>'
+                        + '<option value="320">' + t('media_converter', 'Keep aspect') +' 320 (Wx320)</option>'
+                        + '<option value="480">' + t('media_converter', 'Keep aspect') +' 480 (Wx480)</option>'
+                        + '<option value="600">' + t('media_converter', 'Keep aspect') +' 600 (Wx600)</option>'
+                        + '<option value="720">' + t('media_converter', 'Keep aspect') +' 720 (Wx720)</option>'
+                        + '<option value="1080">' + t('media_converter', 'Keep aspect') + ' 1080 (Wx1080)</option>'
                         + '</select><br>'
                         + '<div class="checkbox-container">'
-                        + '<label class="vc-label" for="movflags">Faststart option (for MP4)</label>'
+                        + '<label class="vc-label" for="movflags">' + t('media_converter', 'Use faststart (for MP4)') + '</label>'
                         + '<input type="checkbox" id="movflags" name="faststart" checked>'
                         + '</div></div>'
                         + '<p class="vc-label urldisplay" id="text" style="display: inline; margin-right: 10px;">'
-                        + t('video_converter', 'Choose the output format:')
-                        + ' <em></em>'
+                        + t('media_converter', 'Choose the output format') + ':<em></em>'
                         + '</p>'
                         + '<div class="oc-dialog-buttonrow boutons" id="buttons">'
-                        + '<a class="button primary" id="mp4">' + t('video_converter', '.MP4') + '</a>'
-                        + '<a class="button primary" id="avi">' + t('video_converter', '.AVI') + '</a>'
-                        + '<a class="button primary" id="m4v">' + t('video_converter', '.M4V') + '</a>'
-                        + '<a class="button primary" id="webm">' + t('video_converter', '.WEBM') + '</a>'
+                        + '<a class="button primary" id="mp4">' + t('media_converter', '.MP4') + '</a>'
+                        + '<a class="button primary" id="avi">' + t('media_converter', '.AVI') + '</a>'
+                        + '<a class="button primary" id="m4v">' + t('media_converter', '.M4V') + '</a>'
+                        + '<a class="button primary" id="webm">' + t('media_converter', '.WEBM') + '</a>'
                         + '</div>'
                     );
-                    var finished = false;
+                    let finished = false;
                     document.getElementById("btnClose").addEventListener("click", function () {
                         close();
                         finished = true;
@@ -162,8 +162,8 @@ $(document).ready(function () {
                         close();
                         finished = true;
                     });
-                    var fileExt = filename.split('.').pop();
-                    var types = ['avi', 'mp4', 'm4v', 'webm'];
+                    const fileExt = filename.split('.').pop();
+                    const types = ['avi', 'mp4', 'm4v', 'webm'];
                     types.forEach(type => {
                         if (type == fileExt) {
                             document.getElementById(type).setAttribute('style', 'background-color: lightgray; border-color:lightgray;');
@@ -203,7 +203,7 @@ $(document).ready(function () {
                                 $.ajax({
                                     type: "POST",
                                     async: "true",
-                                    url: OC.filePath('video_converter', 'ajax', 'convertHere.php'),
+                                    url: OC.filePath('media_converter', 'ajax', 'convertHere.php'),
                                     data: data,
                                     beforeSend: function () {
                                         document.getElementById("loading").style.display = "block";
@@ -236,8 +236,8 @@ $(document).ready(function () {
                                             context.fileList.showFileBusyState(tr, false);
                                             close();
                                             OC.dialogs.alert(
-                                                t('video_converter', response.desc),
-                                                t('video_converter', 'Error converting ' + filename)
+                                                t('media_converter', response.desc),
+                                                t('media_converter', 'Error converting ' + filename)
                                             );
                                         }
                                     }

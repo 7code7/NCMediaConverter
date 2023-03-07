@@ -2,10 +2,10 @@
 <info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>media_converter</id>
-    <name>Media converter</name>
+    <name>Media Converter</name>
     <summary>Convert video and audio within the web interface</summary>
-    <screenshot>https://raw.githubusercontent.com/PaulLereverend/NextcloudVideo_Converter/master/img/appstore.gif</screenshot>
-    <description><![CDATA[Convert videos within the web interface
+    <screenshot>https://raw.githubusercontent.com/7code7/NCMediaConverter/master/img/appstore.gif</screenshot>
+    <description><![CDATA[Convert video and audio within the web interface
 
 *  **Features:**
     * Video Conversion
