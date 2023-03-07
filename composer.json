@@ -1,16 +1,16 @@
 {
-    "name": "media_converter",
+    "name": "ncvideoconverter",
+    "version": "0.0.1",
     "description": "Allows to convert Audio and Video",
     "type": "project",
     "license": "AGPL",
-    "authors": [
-        {
-            "name": "Andreas Butz"
-        }
-    ],
-    "require": {
+    "repository": {
+        "type": "project",
+        "url": "git+https://github.com/7code7/NCMediaConverter.git"
     },
-    "require-dev": {
-        "phpunit/phpunit": "^5.4"
-    }
+    "author": "",
+    "bugs": {
+        "url": "https://github.com/7code7/NCMediaConverter/issues"
+    },
+    "homepage": "https://github.com/7code7/NCMediaConverter#readme"
 }
